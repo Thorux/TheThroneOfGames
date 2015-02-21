@@ -3,9 +3,7 @@ package Data;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 
-import java.security.Key;
-
-import static Helpers.Artists.*;
+import static Helpers.Artists.HEIGHT;
 
 /**
  * Created by Kristian on 21/02/2015 at 06:41.

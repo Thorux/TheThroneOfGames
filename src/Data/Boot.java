@@ -2,9 +2,7 @@ package Data;
 
 import org.lwjgl.opengl.Display;
 
-import java.util.Scanner;
-
-import static Helpers.Artists.*;
+import static Helpers.Artists.BeginSession;
 
 /**
  * Created by Anders on 21-02-2015.

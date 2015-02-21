@@ -9,7 +9,6 @@ import org.newdawn.slick.util.ResourceLoader;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ResourceBundle;
 
 import static org.lwjgl.opengl.GL11.*;
 
