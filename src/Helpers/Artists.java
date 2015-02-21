@@ -11,7 +11,7 @@ import static org.lwjgl.opengl.GL11.*;
  */
 public class Artists {
 
-    public static final int WIDTH = 800, HEIGHT = 600;
+    public static final int WIDTH = 896, HEIGHT = 768;
 
     public static void BeginSession() {
         Display.setTitle("Whatever main!");
