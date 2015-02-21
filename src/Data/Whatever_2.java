@@ -7,6 +7,7 @@ public class Whatever_2 {
 
     public static int row, col;
     public static int supbro = 2;
+    public static int kom = 2;
 
 
 
