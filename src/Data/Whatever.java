@@ -36,7 +36,6 @@ public class Whatever {
         }
         else {
             System.out.println("You win!!! You spent one try!");
-
         }
     }
 }

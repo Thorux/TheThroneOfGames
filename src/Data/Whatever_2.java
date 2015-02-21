@@ -6,7 +6,7 @@ package Data;
 public class Whatever_2 {
 
     public static int row, col;
-    public static
+    public static int supbro = 2;
 
 
 
