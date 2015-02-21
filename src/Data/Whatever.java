@@ -31,7 +31,12 @@ public class Whatever {
                 i++;
             }
         }
-        System.out.println("You win!!! You spent " + i + " tries!") ;
+        if (i != 1) {
+            System.out.println("You win!!! You spent " + i + " tries!");
+        }
+        else {
+            System.out.println("You win!!! You spent one try!");
 
+        }
     }
 }
