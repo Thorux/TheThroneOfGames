@@ -12,7 +12,7 @@ public class Whatever_2 {
     public static int row, col;
     public static Scanner scan = new Scanner(System.in);
     public static int[][] board = new int[6][7];
-    public static char turn = 'X'
+    public static char turn = 'X';
 
     public static void main(String[] args){
         //BeginSession();
@@ -23,15 +23,31 @@ public class Whatever_2 {
             }
         }
 
+        //PrintBoard();
         Play();
     }
 
     public static void Play() {
         boolean playing = true;
+        PrintBoard();
+
         while (playing) {
+            System.out.println("Please enter a row and a column: ");
             row = scan.nextInt() - 1;
             col = scan.nextInt() - 1;
             board[row][col] = turn;
+                /*
+                * if (GameOver(row, col)) {
+                * playing = false;
+                * System.out.println("Game over! Player " + turn + " wins!");
+                * }
+                * */
+            PrintBoard();
+            if (turn == 'X')
+                turn = 'Y';
+            else
+                turn = 'X';
+
         }
     }
 
@@ -44,11 +60,12 @@ public class Whatever_2 {
                 System.out.print(board[i][j] + " | ");
             }
         }
-
+            System.out.println();
 
     }
 
-    public boolean GameOver(int rMove, int cMove) {
+    public static boolean GameOver(int rMove, int cMove) {
+
 
         return false;
     }
