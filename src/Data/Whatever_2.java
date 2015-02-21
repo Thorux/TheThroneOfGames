@@ -12,9 +12,9 @@ public class Whatever_2 {
     public static int row, col;
     public static Scanner scan = new Scanner(System.in);
     public static int[][] board = new int[6][7];
-    public static char turn = 'X';
+    public static int turn = 2;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //BeginSession();
 
         for (int i = 0; i < 6; i++) {
@@ -43,24 +43,27 @@ public class Whatever_2 {
                 * }
                 * */
             PrintBoard();
-            if (turn == 'X')
-                turn = 'Y';
-            else
-                turn = 'X';
-
+            if (turn == 2) {
+                turn = 5;
+            }
+            else {
+                turn = 2;
+            }
         }
     }
 
     public static void PrintBoard() {
-        for (int i = 0; i < 6; i++){
+        for (int i = 0; i < 6; i++) {
             System.out.println();
             for (int j = 0; j < 7; j++) {
-                if (j == 0)
+                if (j == 0) {
                     System.out.print("| ");
+                }
                 System.out.print(board[i][j] + " | ");
+
             }
         }
-            System.out.println();
+        System.out.println();
 
     }
 
@@ -69,7 +72,6 @@ public class Whatever_2 {
 
         return false;
     }
-
 
 
 }
