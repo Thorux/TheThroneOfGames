@@ -9,12 +9,12 @@ import static Helpers.Artists.QuickLoad;
  * Created by Kristian on 21/02/2015 at 05:20.
  */
 public class Tile {
-    private float x, y, width, height;
+    private int x, y, width, height;
     private Texture texture;
     private TileType type;
 
 
-    public Tile(float x, float y, float width, float height, TileType type) {
+    public Tile(int x, int y, int width, int height, TileType type) {
         this.x = x;
         this.y = y;
 
@@ -28,35 +28,35 @@ public class Tile {
         DrawQuadTex(texture, x, y, width, height);
     }
 
-    public float getX() {
+    public int getX() {
         return x;
     }
 
-    public void setX(float x) {
+    public void setX(int x) {
         this.x = x;
     }
 
-    public float getY() {
+    public int getY() {
         return y;
     }
 
-    public void setY(float y) {
+    public void setY(int y) {
         this.y = y;
     }
 
-    public float getWidth() {
+    public int getWidth() {
         return width;
     }
 
-    public void setWidth(float width) {
+    public void setWidth(int width) {
         this.width = width;
     }
 
-    public float getHeight() {
+    public int getHeight() {
         return height;
     }
 
-    public void setHeight(float height) {
+    public void setHeight(int height) {
         this.height = height;
     }
 

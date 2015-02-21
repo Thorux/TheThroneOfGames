@@ -18,10 +18,12 @@ import static org.lwjgl.opengl.GL11.*;
  */
 public class Artists {
 
-    public static final int WIDTH = 896, HEIGHT = 768;
+    public static final int WIDTH = 1152;
+    public static final int HEIGHT = 1024;
 
     public static void BeginSession() {
         Display.setTitle("Whatever main!");
+        Display.setResizable(true);
         try {
             Display.setDisplayMode(new DisplayMode(WIDTH, HEIGHT));
             Display.create();
@@ -33,17 +35,12 @@ public class Artists {
         glLoadIdentity();
         glOrtho(0, WIDTH, HEIGHT, 0, -1, 1);
         glMatrixMode(GL_MODELVIEW);
-
-
-        while(!Display.isCloseRequested()) {
-            Display.update();
-            Display.sync(60);
-        }
-        Display.destroy();
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     }
 
-    public static void DrawQuadTex(Texture tex, float x, float y, float width, float height) {
+    public static void DrawQuadTex(Texture tex, int x, int y, int width, int height) {
         tex.bind();
         glTranslatef(x, y, 0); // because our game is 2D, we set the third parameter to 0. (Translates the global coordinates to local coordinates, so that the top left corner is 0,0.)
         glBegin(GL_QUADS);

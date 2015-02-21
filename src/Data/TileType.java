@@ -5,7 +5,7 @@ package Data;
  */
 public enum TileType {
 
-    Board("backGroundTile", true), Blue("blueStoneWithBackground", false), White("whiteStoneWithBackground", false);
+    Board("backGroundTile", true), Blue("blueStoneWithBackground", false), White("whiteStoneWithBackground", false), BG("bacGround", false);
 
     boolean isBackground;
     String textureName;
